@@ -28,6 +28,6 @@ cd /path/data/clean_sequences/fastQC_results
 
 multiqc .
 ```
-Once this is done, please share by email the html files generated in both runs, and I will take a look at it.
+Once this is done, please share by email the html files generated in both runs, and we will discuss the results.
 
 Good luck!
