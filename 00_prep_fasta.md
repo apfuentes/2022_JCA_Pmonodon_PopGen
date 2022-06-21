@@ -217,5 +217,5 @@ echo "################# picard dictionary done" ;
 Rename genome dictionary file, because GATK will expect it to be named as `genome.dict` not `genome.fasta.dict`:
 ```
 cd /path/00-genome
-mv A.obtectus_v2.0.fasta.dict A.obtectus_v2.0.dict
+mv GCF_015228065.1_NSTDA_Pmon_1_genomic_renamed.fna.dict GCF_015228065.1_NSTDA_Pmon_1_genomic_renamed.dict
 ```
