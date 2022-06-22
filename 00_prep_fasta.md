@@ -1,6 +1,6 @@
-# Reference genome of the black tiger shrimp (Penaeus monodon)
+# Reference genome of the black tiger shrimp (*Penaeus monodon*)
 
-The assembly covered 2.39 Gb (92.3% of the estimated genome size) and contains 44 pseudomolecules, see the website of the project [here](https://www.biotec.or.th/pmonodon/index.php)
+The assembly covered 2.39 Gb (92.3% of the estimated genome size) and contains 44 pseudomolecules + numerous unplaced scaffolds. More details in the website of the project [here](https://www.biotec.or.th/pmonodon/index.php)
 
 - Files from NCBI:
 NSTDA_Pmon_1
