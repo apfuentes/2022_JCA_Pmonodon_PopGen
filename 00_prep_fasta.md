@@ -177,11 +177,11 @@ For read mapping and variant calling using BWA and GATK, respectively, it is nec
 ```bash
 #!/bin/bash
 
-# Load required software.
-module load bioinfo-tools
-module load bwa/0.7.17
-module load samtools/1.9
-module load picard/2.20.4
+# Load required software (only applicable to Uppmax).
+#module load bioinfo-tools
+#module load bwa/0.7.17
+#module load samtools/1.9
+#module load picard/2.20.4
 
 # Set environment variables.
 REF_FILE='/path/00-genome/GCF_015228065.1_NSTDA_Pmon_1_genomic_renamed.fna'
@@ -205,6 +205,7 @@ echo "################# samtools faidx done" ;
 # Generate sequence dictionary.
 # Note that this is the new syntax for use with the latest version of Picard. Older versions used a slightly different syntax because all the tools were in separate jars, so you'd call e.g. java -jar CreateSequenceDictionary.jar directly.
 # This creates a file called reference.dict formatted like a SAM header, describing the contents of your reference FASTA file.
+# >>>> Update the RAM memory >>>
 java -Xmx48g -jar $PICARD_JAR CreateSequenceDictionary \
 REFERENCE=${REF_FILE} \
 OUTPUT=${REF_FILE}.dict
