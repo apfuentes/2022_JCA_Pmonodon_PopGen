@@ -205,7 +205,7 @@ echo "################# samtools faidx done" ;
 # Generate sequence dictionary.
 # Note that this is the new syntax for use with the latest version of Picard. Older versions used a slightly different syntax because all the tools were in separate jars, so you'd call e.g. java -jar CreateSequenceDictionary.jar directly.
 # This creates a file called reference.dict formatted like a SAM header, describing the contents of your reference FASTA file.
-# >>>> Update the RAM memory >>>
+# >>>> Update the RAM memory -Xmx48g >>>
 java -Xmx48g -jar $PICARD_JAR CreateSequenceDictionary \
 REFERENCE=${REF_FILE} \
 OUTPUT=${REF_FILE}.dict
