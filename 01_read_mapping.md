@@ -219,7 +219,10 @@ echo -e $(date -u) ": Qualimap ended..."
 
 ### 2. Run each of the bash scripts generated
 
-There should be a single script for each pool sample. While this could be run either in parallel or consecutively in an automatic way, I would recommend to launch each script manually after the other, once you make sure every works.
+There should be a single script for each pool sample. While running these scripts could be done programmatically (e.g., in parallel or consecutively using a for loop), I would recommend to launch each script manually after the other, to you make sure every works. For this use:
+```
+bash map_reads_sample1.sh
+```
 
 ## Generate a single report of all qualimap reports
 Once all the BAM files are generated, combine the Qualimap reports using MultiQC:
