@@ -2,7 +2,7 @@
 # Map reads against the reference genome assembly
 
 ## Overview
-Here we will align the clean paired-end reads of each pool against the reference genome of *P. monodon* using [BWA](http://bio-bwa.sourceforge.net/). From this, we will get a separate [BAM](https://software.broadinstitute.org/software/igv/BAM) file for each pool. Then we will do some post-processing (mark duplicates, add read groups, generate an index file) to make the BAM files ready for variant calling with [GATK](https://gatk.broadinstitute.org/hc/en-us). Finally, we will generate read mapping quality statistics with [Qualimap](http://qualimap.conesalab.org)
+Here we will align the clean paired-end reads of each pool against the reference genome of *P. monodon* using [BWA](http://bio-bwa.sourceforge.net/). From this, we will get a separate [BAM](https://software.broadinstitute.org/software/igv/BAM) file for each pool. Then we will do some post-processing (mark duplicates, add read groups, generate an index file) to prepare the BAM files for variant calling with [GATK](https://gatk.broadinstitute.org/hc/en-us). Finally, we will generate read mapping quality statistics with [Qualimap](http://qualimap.conesalab.org)
 
 ## Required Programs
 Make sure these programs are installed in your computer:
