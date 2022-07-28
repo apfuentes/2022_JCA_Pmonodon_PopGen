@@ -18,6 +18,7 @@ Make sure these programs are installed in your computer:
 
 ## Input file
 Let's start by creating a TXT file listing the name of your samples, which should be part of the name of the fastq files (R1 and R2).
+
 Assuming your files are named something like this:
 ```
 sample1_R1.fastq.gz
